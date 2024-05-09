@@ -1,0 +1,630 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    animation: opac 0.4s;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #fff;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2;
+}
+
+.place {
+    width: 900px;
+    min-width: 20px;
+    height: auto;
+}
+
+header a img {
+    height: 100px;
+    width: auto;
+    /* position: absolute;   */
+    display: inline-block;
+
+}
+
+.buttons-header {
+    background-color: #fff;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.buttons-header a {
+    color: #282828;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400px;
+    margin-right: 20px;
+    transition: 0.1s ease;
+}
+
+.buttons-header a:hover {
+    color: #e07f00;
+}
+
+.buttons-header img {
+
+    height: 25px;
+    width: 25px;
+}
+
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    width: 1000px;
+    min-width: 400px;
+    height: auto;
+}
+
+
+.carousel img {
+    max-height: 500px;
+    width: 700px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 1400px;
+}
+
+.text1 {
+    max-width: 300px;
+    min-width: 100px;
+    margin-right: 20px;
+}
+
+.novinka {
+    background-color: #282828;
+    height: 23px;
+    width: 90px;
+    padding-left: 10px;
+    transition: 0.3s ease;
+    margin-right: 210px;
+    /* position: absolute; */
+}
+
+.novinka a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.novinka:hover {
+    width: 120px;
+}
+
+.text2 {
+    text-align: center;
+    max-height: max-content;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.text2 p {
+    padding-right: 20px;
+    color: #282828;
+    max-width: max-content;
+    text-align: center;
+    font-weight: 900;
+    background-color: #fff;
+    font-size: 55px;
+    margin: 0;
+}
+
+@media (max-width: 415px) {
+
+    .novinka {
+        margin-right: 10px;
+    }
+
+    .text2 {
+        margin-top: 40px;
+    }
+
+    .text2 p {
+        font-size: 35px;
+    }
+
+    .pic1 {
+        width: 300px;
+        height: 420px;
+    }
+
+    .pic1 img {
+        width: 300px;
+        height: 420px;
+    }
+
+}
+
+.line {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.line1 {
+    max-width: 1100px;
+    min-width: 390px;
+    height: 2px;
+    margin: auto;
+    background-color: #282828;
+}
+
+.tovars {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.idei {
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pic1 {
+    width: 400px;
+    height: 550px;
+}
+
+.pic1 img {
+    width: 400px;
+    height: 550px;
+}
+
+.dot1 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -450px;
+    margin-left: 160px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot1:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot2 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -150px;
+    margin-left: 160px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot2:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot3 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -400px;
+    margin-left: 10px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot3:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot4 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -200px;
+    margin-left: 140px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot4:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot5 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -295px;
+    margin-left: 5px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot5:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot6 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -50px;
+    margin-left: 130px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot6:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot7 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -180px;
+    margin-left: 50px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot7:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot8 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -120px;
+    margin-left: 140px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot8:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.dot9 {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #474747;
+    position: absolute;
+    z-index: 100;
+    margin-top: -400px;
+    margin-left: 140px;
+    transition: 0.5s ease;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 1.5px;
+}
+
+.dot9:hover {
+    width: 210px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+.kartinki {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+
+.toppic,
+.botpic {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pervaya,
+.vtoraya {
+    transition: 0.4s ease;
+}
+
+
+.pervaya {
+    width: 250px;
+    height: 250px;
+
+}
+
+.pervaya img {
+    height: 100%;
+    width: 100%;
+}
+
+.vtoraya {
+    width: 640px;
+    height: 250px;
+
+}
+
+.vtoraya img {
+    height: 100%;
+    width: 100%;
+}
+
+.kreslo {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: -250px;
+    transition: 0.3s ease-in;
+    padding-top: 110px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.kreslo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.kreslo2 {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 640px;
+    height: 250px;
+    margin-top: -250px;
+    display: flex;
+    transition: 0.3s ease-in;
+    justify-content: center;
+    padding-top: 110px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.kreslo2:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1100px;
+    height: auto;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.short{
+    height: 250px;
+    width: 250px;
+}
+
+.short img{
+    height: 250px;
+    width: 250px;
+}
+
+.short button{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    margin-left: -250px;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.short button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.long{
+    height: 250px;
+    width: 500px;
+}
+
+.long img{
+    height: 250px;
+    width: 500px;
+}
+
+.long button{
+    position: absolute;
+    height: 250px;
+    width: 500px;
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0);
+    margin-left: -500px;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.long button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+
+
+footer{
+    background-color: #282828;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.upfoot{
+    width: 100%;
+    height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.upfoot img{
+    height: 100px;
+    width: 170px;
+    margin-right: 600px;
+    margin-left: 30px;
+}
+
+.upfoot a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 40px;
+    transition: 0.1s ease;
+    height: 20px;
+}
+
+.upfoot a:hover{
+    color: #e07f00;
+}

@@ -1,0 +1,273 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    animation: opac 0.4s;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 415px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
+.menu {
+    justify-content: center;
+    max-width: auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    padding-left: 80px;
+    padding-top: 100px;
+}
+
+.static {
+    position: sticky;
+    top: 100px;
+}
+
+.mainstr img {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 75px;
+}
+
+.left a {
+    color: #282828;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.left p {
+    margin-bottom: 60px;
+}
+
+p .katalog {
+    color: #e07f00;
+    font-weight: 700;
+}
+
+
+
+
+.right {
+    width: 900px;
+    height: auto;
+    background-color: #fff;
+}
+
+.p1 {
+    color: #282828;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-left: 45px;
+}
+
+.searchtext {
+    width: 750px;
+    height: 30px;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.search {
+    border: none;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: -2px;
+}
+
+.search img {
+    width: 30px;
+    height: auto;
+    background-color: #fff;
+}
+
+.p2 {
+    color: #282828;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 45px;
+}
+
+.p3 {
+    color: #282828;
+    font-size: 15px;
+    font-weight: 500px;
+    margin-top: 0;
+    margin-left: 45px;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.filter button{
+    border: 0;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.filter button:hover{
+    color: #e07f00;
+}
+
+.filter a{
+    width: 30px;
+    height: auto;
+}
+
+.filter a img{
+    width: 20px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.line1 {
+    height: 2px;
+    width: 850px;
+    background-color: #282828;
+}
+
+.tovar1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    margin-left: 45px;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.tovar1 img {
+    height: 300px;
+    width: auto;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.tovar1 .name {
+    color: #282828;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.tovar1 .cena {
+    color: #e07f00;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.tovar1 .opisanie {
+    font-size: 13px;
+    font-weight: 300;
+    color: #282828;
+    margin-right: 10px;
+}
+
+.dobavit {
+    width: 240px;
+    height: 40px;
+    border: 2px solid #e07f00;
+    color: #e07f00;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    background: none;
+}
+
+.dobavit:hover {
+    background-color: #e07f00;
+    color: #fff;
+}
+
+
+footer {
+    background-color: #282828;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.upfoot {
+    width: 100%;
+    height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.upfoot img {
+    height: 100px;
+    width: 170px;
+    margin-right: 600px;
+    margin-left: 30px;
+}
+
+.upfoot a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 40px;
+    transition: 0.1s ease;
+    height: 20px;
+}
+
+.upfoot a:hover {
+    color: #e07f00;
+}
